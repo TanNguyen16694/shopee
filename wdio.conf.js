@@ -63,7 +63,6 @@ exports.config = {
         'goog:chromeOptions': {
             args: [
                 'start-maximized',
-                '--headless',
                 '--window-size=1920,1080',
             ]
         },
@@ -104,7 +103,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://demo.guru99.com/test/newtours/',
+    baseUrl: 'http://demo.guru99.com/test/newtours',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -148,12 +147,12 @@ exports.config = {
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
+         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
+        requireModule: ['@babel/register'],
         // <string[]> (file/dir) require files before executing features
         require: ['./test/step-definitions/**/*.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,
-        // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
-        requireModule: ['@babel/register'],
         // <boolean> invoke formatters without executing steps
         dryRun: false,
         // <boolean> abort the run on first failure

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/TanNguyen16694/shopee#readme",
   "dependencies": {
+    "@wdio/sync": "^7.5.7",
     "chai": "^4.3.4",
     "cucumber": "^7.0.0-rc.0",
     "webdriverio": "^7.5.7"

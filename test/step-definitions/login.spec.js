@@ -1,7 +1,7 @@
-import { When, Then } from "cucumber";
+import { Given, When, Then } from "cucumber";
 import { assert } from 'chai'
 import { DataLogin } from "../data/data.login";
-import { LoginObject, LoginVerify } from "../object/login.ob"
+import { LoginObject, LoginVerify } from "../object/login.po"
 
 Given("User Access Website", () => {
     browser.reloadSession()

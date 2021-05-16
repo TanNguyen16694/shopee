@@ -1,5 +1,5 @@
 const LoginObject = {
-    txt_Username: 'input[name="username"]',
+    txt_Username: 'input[name="userName"]',
     txt_Password: 'input[name="password"]',
     btn_Login: 'input[name="submit"]',
 }

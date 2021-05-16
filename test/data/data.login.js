@@ -1,6 +1,6 @@
 const DataLogin = {
   //url default
-  url: "/auth/login",
+  url: "",
   //username
   username: "abc",
   password: "123",
